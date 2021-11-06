@@ -56,7 +56,7 @@ camera="raspi"
 # Defaults to 10fps
 #
 #camera_raspi_options="-fps 10"
-camera_raspi_options="-x 1280 -y 720 -fps 20"
+#camera_raspi_options="-x 1280 -y 720 -fps 20"
 
 ### Configuration of camera HTTP output
 #
@@ -71,8 +71,8 @@ camera_raspi_options="-x 1280 -y 720 -fps 20"
 #
 #camera_http_webroot="./www-mainsail"
 #camera_http_options="-n"
-camera_http_webroot="./"
-camera_http_options=""
+#camera_http_webroot="./"
+#camera_http_options=""
 
 ### EXPERIMENTAL
 # Support for different streamer types.
