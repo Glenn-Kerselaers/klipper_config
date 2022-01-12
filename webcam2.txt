@@ -55,7 +55,7 @@ camera="raspi"
 #
 # Defaults to 10fps
 #
-#camera_raspi_options="-fps 5 -x 640 -y 480"
+camera_raspi_options="-fps 5 -x 640 -y 480"
 
 ### Configuration of camera HTTP output
 #
@@ -68,7 +68,7 @@ camera="raspi"
 #
 # Current working directory is the mjpg-streamer base directory.
 #
-camera_http_webroot="./www-mainsail"
+#camera_http_webroot="./www-mainsail"
 camera_http_options="-n -p 8081"
 
 ### EXPERIMENTAL
