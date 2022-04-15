@@ -21,7 +21,7 @@ camera="usb"
 #
 # Defaults to a resolution of 640x480 px and a framerate of 10 fps
 #
-camera_usb_options="-r 640x480 -f 10"
+camera_usb_options="-r 640x480 -f 10 -d /dev/v4l/by-id/usb-Sunplus_IT_Co_HD_720P_webcam_AN20200704001-video-index0"
 
 ### Additional webcam devices known to cause problems with -f
 #
