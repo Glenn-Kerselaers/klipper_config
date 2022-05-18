@@ -8,7 +8,7 @@ enable_debug_logging = False
 [file_manager]
 config_path = ~/klipper_config
 log_path = ~/klipper_logs
-enable_object_processing = True
+enable_object_processing = False
 queue_gcode_uploads = False
 
 [database]
