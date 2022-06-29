@@ -15,7 +15,7 @@ queue_gcode_uploads = False
 database_path = ~/.moonraker_database
 
 [data_store]
-temperature_store_size = 600
+temperature_store_size = 1200
 gcode_store_size = 1000
 
 [job_queue]
@@ -23,10 +23,9 @@ load_on_startup = False
 
 [authorization]
 cors_domains = 
-	https://my.mainsail.xyz
-	http://my.mainsail.xyz
-	http://*.local
-	http://*.lan
+	*://my.mainsail.xyz
+	*.local
+	*.lan
 	*://app.fluidd.xyz
 trusted_clients = 
 	127.0.0.1
@@ -37,19 +36,23 @@ trusted_clients =
 	172.16.0.0/12
 	192.168.0.0/24
 	192.168.0.0/16
+	172.30.0.0/16
 	FE80::/10
 	::1/128
 force_logins = False
+
+[zeroconf]
 
 [octoprint_compat]
 
 [history]
 
 [update_manager]
-refresh_interval = 168
+refresh_interval = 12
 enable_repo_debug = True
 enable_auto_refresh = True
 enable_system_updates = True
+enable_packagekit = True
 channel = dev
 
 [update_manager mainsail]
