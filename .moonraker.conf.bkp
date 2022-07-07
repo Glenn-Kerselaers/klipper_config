@@ -15,7 +15,7 @@ queue_gcode_uploads = False
 database_path = ~/.moonraker_database
 
 [data_store]
-temperature_store_size = 600
+temperature_store_size = 1200
 gcode_store_size = 1000
 
 [job_queue]
@@ -48,9 +48,11 @@ force_logins = False
 [timelapse]
 
 [update_manager]
+refresh_interval = 12
 enable_repo_debug = True
 enable_auto_refresh = True
 enable_system_updates = True
+enable_packagekit = True
 channel = dev
 
 [update_manager mainsail]
@@ -90,15 +92,6 @@ type = git_repo
 path = ~/klipper-led_effect
 origin = https://github.com/julianschill/klipper-led_effect.git
 is_system_service = False
-
-[update_manager client mobileraker-companion]
-type = git_repo
-path = ~/mobileraker_companion
-origin = https://github.com/Clon1998/mobileraker_companion.git
-primary_branch = main
-env = ~/mobileraker-env/bin/python
-requirements = scripts/mobileraker-requirements.txt
-install_script = scripts/install-mobileraker-companion.sh
 
 [update_manager moonraker-obico]
 type = git_repo
