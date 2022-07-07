@@ -68,6 +68,7 @@ origin = https://github.com/jordanruthe/KlipperScreen.git
 env = ~/.KlipperScreen-env/bin/python
 requirements = scripts/KlipperScreen-requirements.txt
 install_script = scripts/KlipperScreen-install.sh
+managed_services = KlipperScreen
 
 [update_manager timelapse]
 type = git_repo
@@ -77,9 +78,10 @@ origin = https://github.com/mainsail-crew/moonraker-timelapse.git
 
 [update_manager client z_calibration]
 type = git_repo
-path = /home/pi/klipper_z_calibration
+path = ~/klipper_z_calibration
 origin = https://github.com/protoloft/klipper_z_calibration.git
 install_script = install.sh
+managed_services = klipper
 
 [update_manager print_area_bed_mesh]
 type = git_repo
@@ -114,4 +116,11 @@ managed_services = sonar
 type = git_repo
 path = ~/crowsnest
 origin = https://github.com/mainsail-crew/crowsnest.git
+
+[update_manager client frame_expansion]
+type = git_repo
+path = /home/pi/klipper_frame_expansion_comp
+primary_branch = main
+origin = https://github.com/alchemyEngine/klipper_frame_expansion_comp.git
+install_script = install.sh
 
